@@ -22,11 +22,6 @@
         return `${String(mins).padStart(2, '0')}:${String(secs).padStart(2, '0')}`;
     }
 
-    function parseDateTime(dateTimeStr) {
-        const [date, time] = dateTimeStr.split('-');
-        return { date, time, full: dateTimeStr };
-    }
-
     function calculateWidth(totalSeconds) {
         // Based on ratio: 33m22s (2002 seconds) = 2.3287037037037037%
         const referenceSeconds = 2002;
@@ -107,5 +102,5 @@
         });
     }
 
-    setTimeout(collapseDirectTime, 1000);
+    collapseDirectTime();
 })();
