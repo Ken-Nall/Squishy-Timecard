@@ -3,9 +3,11 @@
 // @namespace    http://tampermonkey.net/
 // @version      1.0
 // @description  Collapse direct time entries on timecard into summarized clusters
-// @author       Ken-Nall
+// @author       Ken Nall @kennenal (MDW7) 
 // @match        https://fclm-portal.amazon.com/employee/timeDetails*
 // @grant        none
+// @downloadURL  https://axzile.corp.amazon.com/-/carthamus/download_script/squishy-timecard.user.js
+// @updateURL    https://axzile.corp.amazon.com/-/carthamus/download_script/squishy-timecard.user.js
 // ==/UserScript==
 
 (function() {
