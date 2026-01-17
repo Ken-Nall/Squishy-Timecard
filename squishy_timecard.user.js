@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Squishy Timecard
 // @namespace    http://tampermonkey.net/
-// @version      1.0
+// @version      1.1
 // @description  Collapse direct time entries on timecard into summarized clusters
 // @author       Ken Nall @kennenal (MDW7) 
 // @match        https://fclm-portal.amazon.com/employee/timeDetails*
@@ -78,8 +78,10 @@
                 }
             });
 
-            const startTime = firstRow.querySelectorAll('td')[2].textContent.trim();
-            const endTime = lastRow.querySelectorAll('td')[3].textContent.trim();
+            const firstRowCells = firstRow.querySelectorAll('td');
+            const lastRowCells = lastRow.querySelectorAll('td');
+            const startTime = firstRowCells[1].textContent.trim();
+            const endTime = lastRowCells[2].textContent.trim();
             const formattedTime = formatTime(totalSeconds);
             const newWidth = calculateWidth(totalSeconds);
 
@@ -88,8 +90,8 @@
             titleCell.textContent = titleArray[0];
             titleCell.title = titleArray.join('\n');
             titleCell.style.cursor = 'help';
-            firstRow.querySelectorAll('td')[2].textContent = startTime;
-            firstRow.querySelectorAll('td')[3].textContent = endTime;
+            firstRowCells[1].textContent = startTime;
+            firstRowCells[2].textContent = endTime;
             firstRow.querySelector('td.rightAlign').textContent = formattedTime;
             
             // Adjust the time-segment width
