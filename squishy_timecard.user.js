@@ -6,8 +6,8 @@
 // @author       Ken Nall @kennenal (MDW7) 
 // @match        https://fclm-portal.amazon.com/employee/timeDetails*
 // @grant        none
-// @downloadURL  https://axzile.corp.amazon.com/-/carthamus/download_script/squishy-timecard.user.js
-// @updateURL    https://axzile.corp.amazon.com/-/carthamus/download_script/squishy-timecard.user.js
+// @downloadURL   https://tamarin.aces.amazon.dev/scripts/squishy-timecard/install.user.js
+// @updateURL     https://tamarin.aces.amazon.dev/scripts/squishy-timecard/install.user.js
 // ==/UserScript==
 
 (function() {
