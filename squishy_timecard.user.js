@@ -5,6 +5,7 @@
 // @description  Collapse direct time entries on timecard into summarized clusters
 // @author       Ken Nall @kennenal (MDW7) 
 // @match        https://fclm-portal.amazon.com/employee/timeDetails*
+// @match        https://fclm-portal.amazon.com/employee/ppaTimeDetails*
 // @grant        none
 // @downloadURL   https://tamarin.aces.amazon.dev/scripts/squishy-timecard/install.user.js
 // @updateURL     https://tamarin.aces.amazon.dev/scripts/squishy-timecard/install.user.js
