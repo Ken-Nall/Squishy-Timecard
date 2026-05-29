@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Squishy Timecard
 // @namespace    http://tampermonkey.net/
-// @version      1.3
+// @version      1.4
 // @description  Collapse direct time entries on timecard into summarized clusters
 // @author       Ken Nall @kennenal (MDW7) 
 // @match        https://fclm-portal.amazon.com/employee/timeDetails*
